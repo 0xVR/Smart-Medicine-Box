@@ -1,0 +1,36 @@
+!SESSION 2023-11-14 15:49:43.184 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_AE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-11-14 15:50:33.443
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-11-14 15:50:33.459
+!MESSAGE Log4j2 initialized with config file C:\Users\muham\University of Waterloo\ECE 198\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-11-14 15:50:36.754
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-11-14 16:41:22.353
+!MESSAGE Indexed 'lol' (22 sources, 82 headers) in 3.33 sec: 4,716 declarations; 22,526 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0073%)
+!SESSION 2023-11-15 11:25:41.766 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_AE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\muham\University of Waterloo\ECE 198
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-11-15 11:25:47.642
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-11-15 11:25:47.688
+!MESSAGE Log4j2 initialized with config file C:\Users\muham\University of Waterloo\ECE 198\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-11-15 11:25:54.601
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-11-15 11:26:50.869
+!MESSAGE Indexed 'Smart Medicine Box' (22 sources, 82 headers) in 3.3 sec: 4,716 declarations; 22,526 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0073%)
