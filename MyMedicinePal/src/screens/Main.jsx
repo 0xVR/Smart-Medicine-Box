@@ -14,13 +14,13 @@ const Main = ({ navigation }) => {
     return (
         <TouchableNativeFeedback background={TouchableNativeFeedback.Ripple('rgba(0,0,0,1)', true)} onPress={() => navigation.navigate('list')}>
             <View style={theme.container}>
-                <Text style={[theme.lettermark, { top: 70 }]}>SQLITE APP</Text>
-                <Text style={[theme.lettermark, { bottom: 85 }]}>by Jakub Zielinski</Text>
+                <Text style={[theme.lettermark, { top: 70 }]}>ECE 198</Text>
+                <Text style={[theme.lettermark, { bottom: 85 }]}>Designed by Hadi Zaidi</Text>
 
                 <View style={theme.content} >
-                    <Image style={theme.illustration} source={require('../../assets/illustration.png')} />
-                    <Text style={[theme.title, { fontFamily: 'opensansBold' }]}>Alarm Clock App</Text>
-                    <Text style={[theme.text, { fontFamily: 'opensansRegular' }]}>manage your time with alarm clocks</Text>
+                    <Image style={theme.illustration} source={require('../../assets/illustration.jpg')} />
+                    <Text style={[theme.title, { fontFamily: 'opensansBold' }]}>My Medicine Pal</Text>
+                    <Text style={[theme.text, { fontFamily: 'opensansRegular' }]}>manage your medication schedule with an app</Text>
                     <CustomRoundedButton title={'Get started'} onPress={() => navigation.navigate('list')} />
                 </View>
 
