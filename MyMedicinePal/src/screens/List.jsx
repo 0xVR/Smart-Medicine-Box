@@ -37,7 +37,7 @@ const List = ({ navigation }) => {
 
             </ScrollView>
             <View style={theme.button} >
-                <CustomSquareButton title={"Add medication"} onPress={() => navigation.navigate('creator')} />
+                <CustomSquareButton title={"Add alarm"} onPress={() => navigation.navigate('creator')} />
             </View >
         </View>
     )
