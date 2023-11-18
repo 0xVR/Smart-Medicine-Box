@@ -1,8 +1,10 @@
-import { View, Text, ScrollView, StyleSheet, Button, SafeAreaView, Dimensions } from 'react-native'
+import { View, Text, ScrollView, StyleSheet, Button, SafeAreaView, Dimensions, Pressable } from 'react-native'
 import CustomSquareButton from '../components/buttons/CustomSquareButton';
 import AlarmClocksList from '../components/AlarmClocksList';
 import { React, useEffect, useState } from 'react'
 import { Database } from "../../api/Database";
+import Modal from "react-native-modal";
+import { Audio } from 'expo-av';
 
 const List = ({ navigation }) => {
 
@@ -29,8 +31,27 @@ const List = ({ navigation }) => {
         Database.remove(id);
     };
 
+    const [isModalVisible, setIsModalVisible] = useState(false);
+
+    const handleModal = async () => {
+        setIsModalVisible(() => !isModalVisible);
+        if (!isModalVisible) {
+        const { sound } = await Audio.Sound.createAsync(require('../../assets/wolf.mp3'));
+        await sound.playAsync();}
+    }
+
     return (
         <View style={theme.container}>
+            <Pressable onPress={handleModal}>
+                <Text style={{color:"#f0f2f5", fontSize:25}}>HELLOOOO</Text>
+            </Pressable>
+            <Modal isVisible={isModalVisible}>
+                <View style={theme.container}>
+                    <Text style={{fontSize:25}}>Emergency</Text>
+                    <Text style={{fontSize:25}}>Hadi Zaidi did not take his medication</Text>
+                    <Button title="OK" onPress={handleModal}></Button>
+                </View>
+            </Modal>
             <ScrollView style={{ flexGrow: 1, width: '100%', height: '100%' }}>
 
                 <AlarmClocksList alarms={alarms} remove={deleteAlarm} />
