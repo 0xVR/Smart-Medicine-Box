@@ -22,8 +22,8 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="main" screenOptions={{ navigationBarColor: themes.colors.white, textAlign: 'center' }}>
         <Stack.Screen name="main" component={Main} options={{ headerShown: false }} />
-        <Stack.Screen name="list" component={List} options={{ title: 'Medication alarm list', headerStyle: { backgroundColor: '#1f1f1f' }, headerTintColor: '#fff', }} />
-        <Stack.Screen name="creator" component={AlarmCreator} options={{ title: 'Add new medication', headerStyle: { backgroundColor: '#1f1f1f' }, headerTintColor: '#fff', }} />
+        <Stack.Screen name="list" component={List} options={{ title: 'Medication schedule', headerStyle: { backgroundColor: '#1f1f1f' }, headerTintColor: '#fff', }} />
+        <Stack.Screen name="creator" component={AlarmCreator} options={{ title: 'Add new alarm', headerStyle: { backgroundColor: '#1f1f1f' }, headerTintColor: '#fff', }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
