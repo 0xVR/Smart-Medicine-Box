@@ -33,11 +33,17 @@ const List = ({ navigation }) => {
 
     const [isModalVisible, setIsModalVisible] = useState(false);
 
-    const handleModal = async () => {
-        setIsModalVisible(() => !isModalVisible);
+    const handleModal = () => {
         if (!isModalVisible) {
-        const { sound } = await Audio.Sound.createAsync(require('../../assets/wolf.mp3'));
-        await sound.playAsync();}
+            setTimeout(async () => {
+                setIsModalVisible(() => !isModalVisible);
+                const { sound } = await Audio.Sound.createAsync(require('../../assets/wolf.mp3'));
+                await sound.playAsync();
+            }, 30000)
+
+        } else {
+            setIsModalVisible(() => !isModalVisible);
+        }
     }
 
     return (
