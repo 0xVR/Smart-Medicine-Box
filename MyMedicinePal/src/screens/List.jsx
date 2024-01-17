@@ -39,7 +39,7 @@ const List = ({ navigation }) => {
                 setIsModalVisible(() => !isModalVisible);
                 const { sound } = await Audio.Sound.createAsync(require('../../assets/wolf.mp3'));
                 await sound.playAsync();
-            }, 30000)
+            }, 60000)
 
         } else {
             setIsModalVisible(() => !isModalVisible);
