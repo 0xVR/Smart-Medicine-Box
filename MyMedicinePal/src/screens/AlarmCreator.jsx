@@ -9,6 +9,7 @@ const AlarmCreator = ({ route, navigation }) => {
 
     const [hour, setHour] = useState(new Date().getHours());
     const [minute, setMinute] = useState(new Date().getMinutes());
+    const [second, setSecond] = useState(new Date().getSeconds());
     const [isHoursSelected, setIsHoursSelected] = useState(true)
 
     const addAlarm = () => {
@@ -29,6 +30,10 @@ const AlarmCreator = ({ route, navigation }) => {
                     <Text style={theme.title}>:</Text>
                     <TouchableOpacity onPress={() => setIsHoursSelected(false)}>
                         <Text style={[theme.title, !isHoursSelected ? theme.selected : null]}>{formatNumber(minute)}</Text>
+                    </TouchableOpacity>
+                    <Text style={theme.title}>:</Text>
+                    <TouchableOpacity onPress={() => setIsHoursSelected(false)}>
+                        <Text style={[theme.title, null]}>{formatNumber(second)}</Text>
                     </TouchableOpacity>
                 </View>
                 <View style={{ flex: 6, position: 'relative', margin: 20 }}>
